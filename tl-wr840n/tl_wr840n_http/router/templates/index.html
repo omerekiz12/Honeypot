@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<!--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<script language="javascript" type="text/javascript">
+var url = window.location.href;
+if (url.indexOf("tplinklogin.net") >= 0)
+{
+    url = url.replace("tplinklogin.net", "tplinkwifi.net");
+    window.location = url;
+}
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-130842960-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+        gtag('config', 'UA-130842960-1', { 'anonymize_ip': true });
+        </script>-->
+<head>
+	<link rel="Stylesheet" href="../static/css/main.css" type="text/css" />
+	<link rel="Stylesheet" href="../static/css/other.css" type="text/css" />
+	<script src="../static/js/oid_str.js" type="text/javascript"></script>
+	<script src="../static/js/str.js" type="text/javascript"></script>
+	<script src="../static/js/help.js" type="text/javascript"></script>
+	<script src="../static/js/err.js" type="text/javascript"></script>
+	<script src="../static/js/lib.js" type="text/javascript"></script>
+	<script src="../static/js/3g.js" type="text/javascript"></script>
+	<link rel="Shortcut Icon" href="{% static '/img/login/favicon.ico' %}"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<frameset rows="90,*" border='0' framespacing='0'>
+	<frame name="topFrame" marginWidth="0" marginHeight="0" src="frame/top.htm" noResize scrolling="no" frameSpacing="0" frameBorder="0">
+	<frameset border="5" framespacing="5" cols="182,55%,*">
+		<frame id="frame1" name="bottomLeftFrame" marginWidth="0" marginHeight="0" src="MenuRpm.htm"  frameBorder="0" scrolling="auto" style="overflow-x:hidden">
+		<frame id="frame2" name="mainFrame" marginWidth="0" marginHeight="0" src="mainFrame.htm" frameBorder="0">
+		<frame name="helpFrame" marginWidth="0" marginHeight="0" src="help/StatusHelpRpm.htm" frameBorder="0">
+	</frameset>
+</frameset>
+</html>

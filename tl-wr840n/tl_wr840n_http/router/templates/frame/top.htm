@@ -1,0 +1,84 @@
+<html><head><title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../static/css/top.css">
+    <script src="../static/js/custom.js" type="text/JavaScript"></script>
+</head>
+
+<body leftmargin="0" topmargin="0" marginheight="0" marginwidth="0">
+<table cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr>
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tbody><tr>
+                    <td id="first-td">
+						<a onclick="return NewW();" onmouseover="return ShowUrl();" onmouseout="return EraseUrl();">
+							<img src="../static/img/logo.png" border="0" style="cursor:pointer">
+						</a>
+					</td>
+                    <td id="second-td">
+                        <table id="modelTbl">
+                            <tbody><tr>
+                                <td class="style1"><span id="nameModel">TP-Link Wireless N Router WR840N </span></td>
+                            </tr>
+                            <tr>
+                                <td class="style2"><span id="numModel">Model No. TL-WR840N</span></td>
+                            </tr>
+                        </tbody></table>
+                    </td>
+					<td id="third-td">
+							<img src="../static/img/top-right.png">
+					</td>
+                </tr>
+            </tbody></table>
+        </td>
+    </tr>
+    <!--
+	<tr>
+        <td><img height="3" src="../img/top2.jpg" width="100%" align="top" border="0"></td>
+    </tr>
+	-->
+</tbody></table>
+
+    <script type="text/javascript">
+        var newWin;
+        var url = "http://" + our_web_site;
+	
+		document.getElementById("nameModel").innerHTML = window.parent.$.desc;
+        document.getElementById("numModel").innerHTML = window.parent.m_str.bannermodel + window.parent.$.model;
+	
+        if (window.parent == window)
+            window.location.href = url;
+        function Click() {
+             return false;
+        }
+        document.oncontextmenu = Click;
+
+        function NewW() {
+            if (newWin) newWin.close();
+            newWin = window.open(url, "", "scrollbars=yes,resizable=yes,toolbar=yes,status=yes,menubar=yes,scrollbar=yes,location=yes");
+            return true;
+        }
+        function ShowUrl() {
+            status = url;
+            return true;
+        }
+        function EraseUrl() {
+            status = "";
+            return true;
+        }
+        var address;
+        var errorFlag;
+        function LoadPage() {
+            if (true == errorFlag)
+                parent.location.href = 'http://' + address;
+        }
+        function LoadNewIp() {
+            errorFlag = true;
+            setTimeout("LoadPage()", 3000);
+        }
+        function stopLoad() {   
+            errorFlag = false;
+        }
+    </script>
+
+</body></html>

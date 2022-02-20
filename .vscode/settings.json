@@ -1,0 +1,5 @@
+{
+    "python.analysis.extraPaths": [
+        "./tl-wr840n/tl_wr840n_http/router"
+    ]
+}

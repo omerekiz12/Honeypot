@@ -1,0 +1,2741 @@
+<DslCpeConfig>
+<InternetGatewayDevice>
+<Layer2Bridging>
+<maxBridgeEntries val="16"/>
+<maxFilterEntries val="64"/>
+<maxMarkingEntries val="0"/>
+<bridgeNumberOfEntries val="1"/>
+<filterNumberOfEntries val="6"/>
+<markingNumberOfEntries val="0"/>
+<availableInterfaceNumberOfEntries val="6"/>
+<AvailableInterface instance="1">
+<availableInterfaceKey val="1"/>
+<interfaceType val="LANInterface"/>
+<interfaceReference val="LAN_ETH_INTF#1,1"/>
+</AvailableInterface>
+<AvailableInterface instance="2">
+<availableInterfaceKey val="2"/>
+<interfaceType val="WANInterface"/>
+<interfaceReference val="LAN_ETH_INTF#1,2"/>
+</AvailableInterface>
+<AvailableInterface instance="3">
+<availableInterfaceKey val="3"/>
+<interfaceType val="LANInterface"/>
+<interfaceReference val="LAN_ETH_INTF#1,3"/>
+</AvailableInterface>
+<AvailableInterface instance="4">
+<availableInterfaceKey val="4"/>
+<interfaceType val="LANInterface"/>
+<interfaceReference val="LAN_ETH_INTF#1,4"/>
+</AvailableInterface>
+<AvailableInterface instance="5">
+<availableInterfaceKey val="5"/>
+<interfaceType val="LANInterface"/>
+<interfaceReference val="LAN_ETH_INTF#1,5"/>
+</AvailableInterface>
+<AvailableInterface instance="6">
+<availableInterfaceKey val="6"/>
+<interfaceType val="LANInterface"/>
+<interfaceReference val="LAN_WLAN#1,1"/>
+</AvailableInterface>
+<Filter instance="1">
+<filterKey val="1"/>
+<filterEnable val="1"/>
+<filterStatus val="Disabled"/>
+<filterBridgeReference val="0"/>
+<__filterBridgeRefName val="Default"/>
+<filterInterface val="eth0"/>
+<X_TP_IfAliasName val="LAN"/>
+</Filter>
+<Filter instance="2">
+<filterKey val="2"/>
+<filterEnable val="0"/>
+<filterStatus val="Disabled"/>
+<filterBridgeReference val="0"/>
+<__filterBridgeRefName val="Default"/>
+<filterInterface val="eth0.2"/>
+<X_TP_IfAliasName val="LAN4"/>
+</Filter>
+<Filter instance="3">
+<filterKey val="3"/>
+<filterEnable val="0"/>
+<filterStatus val="Disabled"/>
+<filterBridgeReference val="0"/>
+<__filterBridgeRefName val="Default"/>
+<filterInterface val="eth0.3"/>
+<X_TP_IfAliasName val="LAN3"/>
+</Filter>
+<Filter instance="4">
+<filterKey val="4"/>
+<filterEnable val="0"/>
+<filterStatus val="Disabled"/>
+<filterBridgeReference val="0"/>
+<__filterBridgeRefName val="Default"/>
+<filterInterface val="eth0.4"/>
+<X_TP_IfAliasName val="LAN2"/>
+</Filter>
+<Filter instance="5">
+<filterKey val="5"/>
+<filterEnable val="0"/>
+<filterStatus val="Disabled"/>
+<filterBridgeReference val="0"/>
+<__filterBridgeRefName val="Default"/>
+<filterInterface val="eth0.5"/>
+<X_TP_IfAliasName val="LAN1"/>
+</Filter>
+<Filter instance="6">
+<filterKey val="6"/>
+<filterEnable val="1"/>
+<filterStatus val="Disabled"/>
+<filterBridgeReference val="0"/>
+<__filterBridgeRefName val="Default"/>
+<filterInterface val="ra0"/>
+<X_TP_IfAliasName val="WLAN1"/>
+</Filter>
+<Bridge instance="1">
+<bridgeKey val="0"/>
+<bridgeEnable val="1"/>
+<bridgeStatus val="Disabled"/>
+<bridgeName val="Default"/>
+<VLANID val="0"/>
+<X_TP_EnableBridgeIsolation val="0"/>
+</Bridge>
+</Layer2Bridging>
+<LANDevice instance="1">
+<X_TP_LANIPv6HostConfigManagement>
+<IPv6Interface instance="1">
+<enable val="0"/>
+<IPv6InterfaceAddress val=""/>
+<IPv6InterfaceAddressPrefixLength val="64"/>
+<IPv6InterfaceAddressingType val="Static"/>
+<__ifName val="br0"/>
+</IPv6Interface>
+<DHCPv6ServerEnable val="0"/>
+<DHCPv6MinInterfaceID val="1"/>
+<DHCPv6MaxInterfaceID val="FFFE"/>
+<DHCPv6LeaseTime val="86400"/>
+<IPv6DNSConfigType val="Dhcpv6"/>
+<IPv6DNSServers val="2001:4860:4860::8844"/>
+<IPv6DNSWANConnection val=""/>
+<RADVDEnable val="1"/>
+<ULAEnable val="0"/>
+<ULAPrefix val=""/>
+<ULAPrefixLength val="64"/>
+<RDNSSEnable val="0"/>
+<IPv6SitePrefixConfigType val="Delegated"/>
+<IPv6SitePrefix val=""/>
+<IPv6SitePrefixLength val="64"/>
+<IPv6PDWANConnection val="ewan_ipoev6_d"/>
+<__ifName val="br0"/>
+<IPv6InterfaceNumberOfEntries val="1"/>
+</X_TP_LANIPv6HostConfigManagement>
+<WLANConfiguration instance="1">
+<__syncApStatus val="0"/>
+<__apLastStatus val="3"/>
+<enable val="1"/>
+<status val="Up"/>
+<name val="wlan0"/>
+<BSSID val="d8:5d:4c:bf:60:16"/>
+<channel val="11"/>
+<autoChannelEnable val="1"/>
+<X_TP_PreSSID val="TP-LINK"/>
+<SSID val="TP-LINK_8840"/>
+<beaconType val="Basic"/>
+<MACAddressControlEnabled val="0"/>
+<X_TP_MACAddressControlRule val="deny"/>
+<X_TP_MACTableSize val="1"/>
+<X_TP_Configuration_Modified val="1"/>
+<X_TP_Band val="2.4GHz"/>
+<X_TP_Bandwidth val="Auto"/>
+<standard val="n"/>
+<WEPKeyIndex val="1"/>
+<WEPEncryptionLevel val="Disabled,40-bits,104-bits"/>
+<basicEncryptionModes val="None"/>
+<basicAuthenticationMode val="None"/>
+<WPAEncryptionModes val="TKIPandAESEncryption"/>
+<WPAAuthenticationMode val="PSKAuthentication"/>
+<IEEE11iEncryptionModes val="AESEncryption"/>
+<IEEE11iAuthenticationMode val="PSKAuthentication"/>
+<X_TP_PreSharedKey val="60716385"/>
+<X_TP_GroupKeyUpdateInterval val="0"/>
+<possibleChannels val=""/>
+<basicDataTransmitRates val="1,11,6,24,45,90,150,30,120,90,135,270,405,450,120,240,480,"/>
+<operationalDataTransmitRates val=""/>
+<possibleDataTransmitRates val="11,12,18,36,48,60,120,135,60,90,240,270,45,90,135,270,405,450,120,240,480,"/>
+<SSIDAdvertisementEnabled val="1"/>
+<transmitPowerSupported val="100,50,20"/>
+<transmitPower val="100"/>
+<regulatoryDomain val="DE "/>
+<deviceOperationMode val="InfrastructureAccessPoint"/>
+<X_TP_RadiusServerIP val=""/>
+<X_TP_RadiusServerPort val="1812"/>
+<X_TP_RadiusServerPassword val=""/>
+<WMMEnable val="1"/>
+<X_TP_BeaconInterval val="100"/>
+<X_TP_RTSThreshold val="2346"/>
+<X_TP_FragmentThreshold val="2346"/>
+<X_TP_DTIMFrequency val="1"/>
+<X_TP_IsolateClients val="0"/>
+<X_TP_ShortGIEnable val="1"/>
+<totalAssociations val="1"/>
+<WEPKey instance="1">
+<WEPKey val=""/>
+</WEPKey>
+<WEPKey instance="2">
+<WEPKey val=""/>
+</WEPKey>
+<WEPKey instance="3">
+<WEPKey val=""/>
+</WEPKey>
+<WEPKey instance="4">
+<WEPKey val=""/>
+</WEPKey>
+<X_TP_MultiSSID>
+<multiSSIDEnable val="1"/>
+<MultiSSIDEntry instance="1">
+<WEPKey instance="1">
+<WEPKey val=""/>
+</WEPKey>
+<WEPKey instance="2">
+<WEPKey val=""/>
+</WEPKey>
+<WEPKey instance="3">
+<WEPKey val=""/>
+</WEPKey>
+<WEPKey instance="4">
+<WEPKey val=""/>
+</WEPKey>
+<enable val="1"/>
+<name val="wlan1"/>
+<status val="Up"/>
+<SSID val="TP-LINK_Guest_8840"/>
+<SSIDAdvertisementEnable val="1"/>
+<beaconType val="Basic"/>
+<isolateClients val="0"/>
+<WEPKeyIndex val="1"/>
+<basicEncryptionModes val="None"/>
+<basicAuthenticationMode val="None"/>
+<WPAEncryptionModes val="TKIPandAESEncryption"/>
+<WPAAuthenticationMode val="PSKAuthentication"/>
+<IEEE11iEncryptionModes val="TKIPandAESEncryption"/>
+<IEEE11iAuthenticationMode val="PSKAuthentication"/>
+<preSharedKey val=""/>
+<groupKeyUpdateInterval val="0"/>
+<radiusServerIP val=""/>
+<radiusServerPort val="1812"/>
+<maxStaNum val="32"/>
+<radiusServerPassword val=""/>
+</MultiSSIDEntry>
+</X_TP_MultiSSID>
+<WPS>
+<enable val="1"/>
+<deviceName val=""/>
+<devicePassword val="60716385"/>
+<X_TP_PeerPassword val="0"/>
+<X_TP_State val="Idle"/>
+<version val="0"/>
+<setupLock val="0"/>
+<configurationState val="Configured"/>
+<registrarNumberOfEntries val="0"/>
+<registrarEstablished val="0"/>
+</WPS>
+<X_TP_GuestNetwork>
+<lastModified val="1"/>
+<enable val="1"/>
+<name val="wlan1"/>
+<preSSID val="TP-LINK_Guest"/>
+<isModified val="0"/>
+<LANAccessEnable val="0"/>
+<USBAccessEnable val="0"/>
+<TCEnable val="0"/>
+<TCMaxUpBW val="200"/>
+<TCMinUpBW val="100"/>
+<TCMaxDownBW val="200"/>
+<TCMinDownBW val="100"/>
+<TCRuleID val="1"/>
+</X_TP_GuestNetwork>
+<X_TP_QuickSave>
+<enable val="1"/>
+<X_TP_Band val="2.4GHz"/>
+</X_TP_QuickSave>
+<X_TP_TaskSchedule>
+<enableTimeout val="0"/>
+<seconds val="0"/>
+<timeToClose val="107"/>
+<enable val="0"/>
+<timeDot val="100"/>
+<isUsrCtrl val="0"/>
+<isTimeSet val="0"/>
+<monAm val="0"/>
+<monPm val="0"/>
+<tueAm val="0"/>
+<tuePm val="0"/>
+<wedAm val="0"/>
+<wedPm val="0"/>
+<thuAm val="0"/>
+<thuPm val="0"/>
+<friAm val="0"/>
+<friPm val="0"/>
+<satAm val="0"/>
+<satPm val="0"/>
+<sunAm val="0"/>
+<sunPm val="0"/>
+</X_TP_TaskSchedule>
+<X_TP_WDSBridge>
+<bridgeEnable val="0"/>
+<bridgeName val="wds0"/>
+<bridgeAddrMode val="detect"/>
+<bridgeBSSID val=""/>
+<bridgeSSID val=""/>
+<bridgeAuthMode val="Open"/>
+<bridgeEncryptMode val="None"/>
+<bridgeKey val=""/>
+<bridgeWepKeyIndex val="1"/>
+</X_TP_WDSBridge>
+<X_TP_MACTableEntry instance="1">
+<enabled val="1"/>
+<MACAddress val="74:D4:35:A1:0C:12"/>
+<description val="TEST_FILTER_1"/>
+<hostName val="wlan0"/>
+</X_TP_MACTableEntry>
+<X_TP_WlBrName instance="1">
+<ifName val="ra0"/>
+<bridgeName val="br0"/>
+</X_TP_WlBrName>
+</WLANConfiguration>
+<WLANConfiguration instance="2">
+<__syncApStatus val="0"/>
+<__apLastStatus val="3"/>
+<enable val="0"/>
+<status val="Disabled"/>
+<name val="wlan5"/>
+<BSSID val="D8:5D:4C:BF:60:15"/>
+<channel val="40"/>
+<autoChannelEnable val="1"/>
+<X_TP_PreSSID val="TP-LINK"/>
+<SSID val="TP-LINK_8840_5G"/>
+<beaconType val="11i"/>
+<MACAddressControlEnabled val="0"/>
+<X_TP_MACAddressControlRule val="deny"/>
+<X_TP_MACTableSize val="0"/>
+<X_TP_Configuration_Modified val="0"/>
+<X_TP_Band val="5GHz"/>
+<X_TP_Bandwidth val="Auto"/>
+<standard val="ac"/>
+<WEPKeyIndex val="1"/>
+<WEPEncryptionLevel val="Disabled,40-bits,104-bits"/>
+<basicEncryptionModes val="None"/>
+<basicAuthenticationMode val="None"/>
+<WPAEncryptionModes val="TKIPandAESEncryption"/>
+<WPAAuthenticationMode val="PSKAuthentication"/>
+<IEEE11iEncryptionModes val="AESEncryption"/>
+<IEEE11iAuthenticationMode val="PSKAuthentication"/>
+<X_TP_PreSharedKey val="60716385"/>
+<X_TP_GroupKeyUpdateInterval val="0"/>
+<possibleChannels val=""/>
+<basicDataTransmitRates val=""/>
+<operationalDataTransmitRates val=""/>
+<possibleDataTransmitRates val=""/>
+<SSIDAdvertisementEnabled val="1"/>
+<transmitPowerSupported val="100,50,20"/>
+<transmitPower val="100"/>
+<regulatoryDomain val="DE "/>
+<deviceOperationMode val="InfrastructureAccessPoint"/>
+<X_TP_RadiusServerIP val=""/>
+<X_TP_RadiusServerPort val="1812"/>
+<X_TP_RadiusServerPassword val=""/>
+<WMMEnable val="1"/>
+<X_TP_BeaconInterval val="100"/>
+<X_TP_RTSThreshold val="2346"/>
+<X_TP_FragmentThreshold val="2346"/>
+<X_TP_DTIMFrequency val="1"/>
+<X_TP_IsolateClients val="0"/>
+<X_TP_ShortGIEnable val="1"/>
+<totalAssociations val="0"/>
+<WEPKey instance="1">
+<WEPKey val=""/>
+</WEPKey>
+<WEPKey instance="2">
+<WEPKey val=""/>
+</WEPKey>
+<WEPKey instance="3">
+<WEPKey val=""/>
+</WEPKey>
+<WEPKey instance="4">
+<WEPKey val=""/>
+</WEPKey>
+<X_TP_MultiSSID>
+<multiSSIDEnable val="0"/>
+<MultiSSIDEntry instance="1">
+<WEPKey instance="1">
+<WEPKey val=""/>
+</WEPKey>
+<WEPKey instance="2">
+<WEPKey val=""/>
+</WEPKey>
+<WEPKey instance="3">
+<WEPKey val=""/>
+</WEPKey>
+<WEPKey instance="4">
+<WEPKey val=""/>
+</WEPKey>
+<enable val="0"/>
+<name val="wlan6"/>
+<status val="Disabled"/>
+<SSID val="TP-LINK_Guest_8840_5G"/>
+<SSIDAdvertisementEnable val="1"/>
+<beaconType val="Basic"/>
+<isolateClients val="0"/>
+<WEPKeyIndex val="1"/>
+<basicEncryptionModes val="None"/>
+<basicAuthenticationMode val="None"/>
+<WPAEncryptionModes val="TKIPandAESEncryption"/>
+<WPAAuthenticationMode val="PSKAuthentication"/>
+<IEEE11iEncryptionModes val="TKIPandAESEncryption"/>
+<IEEE11iAuthenticationMode val="PSKAuthentication"/>
+<preSharedKey val=""/>
+<groupKeyUpdateInterval val="0"/>
+<radiusServerIP val=""/>
+<radiusServerPort val="1812"/>
+<maxStaNum val="32"/>
+<radiusServerPassword val=""/>
+</MultiSSIDEntry>
+</X_TP_MultiSSID>
+<WPS>
+<enable val="1"/>
+<deviceName val=""/>
+<devicePassword val="60716385"/>
+<X_TP_PeerPassword val="0"/>
+<X_TP_State val="Idle"/>
+<version val="0"/>
+<setupLock val="0"/>
+<configurationState val="Configured"/>
+<registrarNumberOfEntries val="0"/>
+<registrarEstablished val="0"/>
+</WPS>
+<X_TP_GuestNetwork>
+<lastModified val="0"/>
+<enable val="1"/>
+<name val="wlan6"/>
+<preSSID val="TP-LINK_Guest"/>
+<isModified val="0"/>
+<LANAccessEnable val="0"/>
+<USBAccessEnable val="0"/>
+<TCEnable val="0"/>
+<TCMaxUpBW val="200"/>
+<TCMinUpBW val="100"/>
+<TCMaxDownBW val="200"/>
+<TCMinDownBW val="100"/>
+<TCRuleID val="-1"/>
+</X_TP_GuestNetwork>
+<X_TP_QuickSave>
+<enable val="0"/>
+<X_TP_Band val="5GHz"/>
+</X_TP_QuickSave>
+<X_TP_TaskSchedule>
+<enableTimeout val="0"/>
+<seconds val="0"/>
+<timeToClose val="0"/>
+<enable val="0"/>
+<timeDot val="100"/>
+<isUsrCtrl val="0"/>
+<isTimeSet val="0"/>
+<monAm val="0"/>
+<monPm val="0"/>
+<tueAm val="0"/>
+<tuePm val="0"/>
+<wedAm val="0"/>
+<wedPm val="0"/>
+<thuAm val="0"/>
+<thuPm val="0"/>
+<friAm val="0"/>
+<friPm val="0"/>
+<satAm val="0"/>
+<satPm val="0"/>
+<sunAm val="0"/>
+<sunPm val="0"/>
+</X_TP_TaskSchedule>
+<X_TP_WDSBridge>
+<bridgeEnable val="0"/>
+<bridgeName val="wds1"/>
+<bridgeAddrMode val="detect"/>
+<bridgeBSSID val=""/>
+<bridgeSSID val=""/>
+<bridgeAuthMode val="Open"/>
+<bridgeEncryptMode val="None"/>
+<bridgeKey val=""/>
+<bridgeWepKeyIndex val="1"/>
+</X_TP_WDSBridge>
+</WLANConfiguration>
+<LANEthernetInterfaceNumberOfEntries val="5"/>
+<LANUSBInterfaceNumberOfEntries val="0"/>
+<LANWLANConfigurationNumberOfEntries val="1"/>
+<LANHostConfigManagement>
+<DHCPServerEnable val="1"/>
+<DHCPRelay val="0"/>
+<X_TP_DhcpRelayServer val="0.0.0.0"/>
+<minAddress val="192.168.0.100"/>
+<maxAddress val="192.168.0.199"/>
+<subnetMask val="255.255.255.0"/>
+<DNSServers val="0.0.0.0,0.0.0.0"/>
+<domainName val=""/>
+<IPRouters val="192.168.0.1"/>
+<DHCPLeaseTime val="7200"/>
+<IPInterfaceNumberOfEntries val="1"/>
+<DHCPStaticAddressNumberOfEntries val="1"/>
+<DHCPConditionalPoolNumberOfEntries val="0"/>
+<IPInterface instance="1">
+<enable val="1"/>
+<IPInterfaceIPAddress val="192.168.0.1"/>
+<IPInterfaceSubnetMask val="255.255.255.0"/>
+<IPInterfaceAddressingType val="Static"/>
+<X_TP_MACAddress val="00:0A:EB:13:09:69"/>
+<__ifName val="br0"/>
+</IPInterface>
+<DHCPStaticAddress instance="1">
+<enable val="1"/>
+<chaddr val="74:d4:35:a1:0c:77"/>
+<yiaddr val="192.168.0.111"/>
+</DHCPStaticAddress>
+</LANHostConfigManagement>
+<Hosts>
+<hostNumberOfEntries val="0"/>
+<Host instance="0">
+<IPAddress val="192.168.0.10"/>
+<leaseTimeRemaining val="12"/>
+<MACAddress val="74:D4:35:A1:0C:CB"/>
+<hostName val="MacBook"/>
+<X_TP_ConnType val="0"/>
+</Host>
+</Hosts>
+<LANEthernetInterfaceConfig instance="1">
+<enable val="1"/>
+<status val="Up"/>
+<MACAddress val="00:0A:EB:13:09:69"/>
+<MACAddressControlEnabled val="0"/>
+<maxBitRate val="Auto"/>
+<duplexMode val="Auto"/>
+<__ifName val="eth0"/>
+</LANEthernetInterfaceConfig>
+<LANEthernetInterfaceConfig instance="2">
+<enable val="0"/>
+<status val=""/>
+<MACAddress val="00:0A:EB:13:09:69"/>
+<MACAddressControlEnabled val="0"/>
+<maxBitRate val="Auto"/>
+<duplexMode val="Auto"/>
+<__ifName val="eth0.2"/>
+</LANEthernetInterfaceConfig>
+<LANEthernetInterfaceConfig instance="3">
+<enable val="0"/>
+<status val=""/>
+<MACAddress val="00:0A:EB:13:09:69"/>
+<MACAddressControlEnabled val="0"/>
+<maxBitRate val="Auto"/>
+<duplexMode val="Auto"/>
+<__ifName val="eth0.3"/>
+</LANEthernetInterfaceConfig>
+<LANEthernetInterfaceConfig instance="4">
+<enable val="0"/>
+<status val=""/>
+<MACAddress val="00:0A:EB:13:09:69"/>
+<MACAddressControlEnabled val="0"/>
+<maxBitRate val="Auto"/>
+<duplexMode val="Auto"/>
+<__ifName val="eth0.4"/>
+</LANEthernetInterfaceConfig>
+<LANEthernetInterfaceConfig instance="5">
+<enable val="0"/>
+<status val=""/>
+<MACAddress val="00:0A:EB:13:09:69"/>
+<MACAddressControlEnabled val="0"/>
+<maxBitRate val="Auto"/>
+<duplexMode val="Auto"/>
+<__ifName val="eth0.5"/>
+</LANEthernetInterfaceConfig>
+<X_TP_LANIGMPSnoopConfig>
+<enabled val="0"/>
+<lastMemberQueryInterval val="0"/>
+<hostTimeout val="0"/>
+<mrouterTimeout val="0"/>
+<leaveTimeout val="0"/>
+<maxGroups val="0"/>
+</X_TP_LANIGMPSnoopConfig>
+</LANDevice>
+<X_TP_Firewall>
+<UrlList>
+<UrlCfg instance="1">
+<refCnt val="1"/>
+<urlAddr val="www.amazon.com"/>
+</UrlCfg>
+<UrlCfg instance="2">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="3">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="4">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="5">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="6">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="7">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="8">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="9">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="10">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="11">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="12">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="13">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="14">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="15">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="16">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="17">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="18">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="19">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="20">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="21">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="22">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="23">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="24">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="25">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="26">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="27">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="28">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="29">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="30">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="31">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="32">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="33">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="34">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="35">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="36">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="37">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="38">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="39">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="40">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="41">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="42">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="43">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="44">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="45">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="46">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="47">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="48">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="49">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="50">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="51">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="52">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="53">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="54">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="55">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="56">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="57">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="58">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="59">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="60">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="61">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="62">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="63">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="64">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="65">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="66">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="67">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="68">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="69">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="70">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="71">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="72">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="73">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="74">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="75">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="76">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="77">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="78">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="79">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="80">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="81">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="82">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="83">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="84">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="85">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="86">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="87">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="88">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="89">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="90">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="91">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="92">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="93">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="94">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="95">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="96">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="97">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="98">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="99">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="100">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="101">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="102">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="103">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="104">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="105">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="106">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="107">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="108">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="109">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="110">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="111">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="112">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="113">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="114">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="115">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="116">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="117">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="118">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="119">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="120">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="121">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="122">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="123">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="124">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="125">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="126">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="127">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="128">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="129">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="130">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="131">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="132">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="133">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="134">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="135">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="136">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="137">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="138">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="139">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="140">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="141">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="142">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="143">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="144">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="145">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="146">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="147">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="148">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="149">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="150">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="151">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="152">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="153">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="154">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="155">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="156">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="157">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="158">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="159">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="160">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="161">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="162">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="163">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="164">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="165">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="166">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="167">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="168">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="169">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="170">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="171">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="172">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="173">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="174">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="175">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="176">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="177">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="178">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="179">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="180">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="181">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="182">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="183">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="184">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="185">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="186">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="187">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="188">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="189">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="190">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="191">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="192">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="193">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="194">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="195">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="196">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="197">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="198">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="199">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+<UrlCfg instance="200">
+<refCnt val="0"/>
+<urlAddr val=""/>
+</UrlCfg>
+</UrlList>
+<enable val="0"/>
+<defaultAction val="0"/>
+<enalbeParentCtrl val="0"/>
+<parentMac val=""/>
+<ExternalHost instance="1">
+<refCnt val="4"/>
+<type val="2"/>
+<entryName val="childUrl1"/>
+<isParentCtrl val="1"/>
+<addUrl val="0"/>
+<urlIndexs val="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>
+<tmpUrl val=""/>
+<IPStart val="0"/>
+<IPEnd val="0"/>
+<portStart val="80"/>
+<portEnd val="0"/>
+<mac val=""/>
+</ExternalHost>
+<ExternalHost instance="3">
+<refCnt val="1"/>
+<type val="0"/>
+<entryName val="TEST_TARGET_1"/>
+<isParentCtrl val="0"/>
+<addUrl val="0"/>
+<urlIndexs val="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>
+<tmpUrl val=""/>
+<IPStart val="3232270722"/>
+<IPEnd val="3232270731"/>
+<portStart val="7970"/>
+<portEnd val="7980"/>
+<mac val=""/>
+</ExternalHost>
+<ExternalHost instance="4">
+<refCnt val="0"/>
+<type val="1"/>
+<entryName val="TEST_TARGET_2"/>
+<isParentCtrl val="0"/>
+<addUrl val="0"/>
+<urlIndexs val="00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>
+<tmpUrl val=""/>
+<IPStart val="0"/>
+<IPEnd val="0"/>
+<portStart val="0"/>
+<portEnd val="0"/>
+<mac val="74:d4:35:a1:0c:88"/>
+</ExternalHost>
+<ExternalHost instance="5">
+<refCnt val="0"/>
+<type val="2"/>
+<entryName val="TEST_HOST_3"/>
+<isParentCtrl val="0"/>
+<addUrl val="1"/>
+<urlIndexs val="10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"/>
+<tmpUrl val="www.amazon.com"/>
+<IPStart val="0"/>
+<IPEnd val="0"/>
+<portStart val="80"/>
+<portEnd val="0"/>
+<mac val=""/>
+</ExternalHost>
+<InternalHost instance="1">
+<refCnt val="1"/>
+<type val="1"/>
+<entryName val="childMac1"/>
+<isParentCtrl val="1"/>
+<mac val=""/>
+<IPStart val="0"/>
+<IPEnd val="0"/>
+<portStart val="0"/>
+<portEnd val="0"/>
+</InternalHost>
+<InternalHost instance="2">
+<refCnt val="1"/>
+<type val="1"/>
+<entryName val="childMac2"/>
+<isParentCtrl val="1"/>
+<mac val=""/>
+<IPStart val="0"/>
+<IPEnd val="0"/>
+<portStart val="0"/>
+<portEnd val="0"/>
+</InternalHost>
+<InternalHost instance="3">
+<refCnt val="1"/>
+<type val="1"/>
+<entryName val="childMac3"/>
+<isParentCtrl val="1"/>
+<mac val=""/>
+<IPStart val="0"/>
+<IPEnd val="0"/>
+<portStart val="0"/>
+<portEnd val="0"/>
+</InternalHost>
+<InternalHost instance="4">
+<refCnt val="1"/>
+<type val="1"/>
+<entryName val="childMac4"/>
+<isParentCtrl val="1"/>
+<mac val=""/>
+<IPStart val="0"/>
+<IPEnd val="0"/>
+<portStart val="0"/>
+<portEnd val="0"/>
+</InternalHost>
+<InternalHost instance="5">
+<refCnt val="1"/>
+<type val="0"/>
+<entryName val="TEST_HOST_1"/>
+<isParentCtrl val="0"/>
+<mac val=""/>
+<IPStart val="3232235653"/>
+<IPEnd val="3232235654"/>
+<portStart val="7900"/>
+<portEnd val="7901"/>
+</InternalHost>
+<InternalHost instance="6">
+<refCnt val="0"/>
+<type val="1"/>
+<entryName val="TEST_HOST_2"/>
+<isParentCtrl val="0"/>
+<mac val="74:d4:35:a1:0c:66"/>
+<IPStart val="0"/>
+<IPEnd val="0"/>
+<portStart val="0"/>
+<portEnd val="0"/>
+</InternalHost>
+<TaskSchedule instance="1">
+<refCnt val="4"/>
+<isParentCtrl val="1"/>
+<entryName val="childSchedule1"/>
+<monAm val="0"/>
+<monPm val="0"/>
+<tueAm val="0"/>
+<tuePm val="0"/>
+<wedAm val="0"/>
+<wedPm val="0"/>
+<thuAm val="0"/>
+<thuPm val="0"/>
+<friAm val="0"/>
+<friPm val="0"/>
+<satAm val="0"/>
+<satPm val="0"/>
+<sunAm val="0"/>
+<sunPm val="0"/>
+</TaskSchedule>
+<TaskSchedule instance="2">
+<refCnt val="1"/>
+<isParentCtrl val="0"/>
+<entryName val="TEST_SCHEDULE_1"/>
+<monAm val="8224"/>
+<monPm val="0"/>
+<tueAm val="136"/>
+<tuePm val="0"/>
+<wedAm val="131072"/>
+<wedPm val="0"/>
+<thuAm val="64"/>
+<thuPm val="0"/>
+<friAm val="0"/>
+<friPm val="0"/>
+<satAm val="0"/>
+<satPm val="0"/>
+<sunAm val="0"/>
+<sunPm val="0"/>
+</TaskSchedule>
+<Rule instance="1">
+<enable val="1"/>
+<action val="0"/>
+<ruleName val="parentCtrl1"/>
+<isParentCtrl val="1"/>
+<direction val="1"/>
+<protocol val="0"/>
+<setAlready val="0"/>
+<internalHostRef val="childMac1"/>
+<externalHostRef val="childUrl1"/>
+<scheduleRef val="childSchedule1"/>
+</Rule>
+<Rule instance="2">
+<enable val="1"/>
+<action val="0"/>
+<ruleName val="parentCtrl2"/>
+<isParentCtrl val="1"/>
+<direction val="1"/>
+<protocol val="0"/>
+<setAlready val="0"/>
+<internalHostRef val="childMac2"/>
+<externalHostRef val="childUrl1"/>
+<scheduleRef val="childSchedule1"/>
+</Rule>
+<Rule instance="3">
+<enable val="1"/>
+<action val="0"/>
+<ruleName val="parentCtrl3"/>
+<isParentCtrl val="1"/>
+<direction val="1"/>
+<protocol val="0"/>
+<setAlready val="0"/>
+<internalHostRef val="childMac3"/>
+<externalHostRef val="childUrl1"/>
+<scheduleRef val="childSchedule1"/>
+</Rule>
+<Rule instance="4">
+<enable val="1"/>
+<action val="0"/>
+<ruleName val="parentCtrl4"/>
+<isParentCtrl val="1"/>
+<direction val="1"/>
+<protocol val="0"/>
+<setAlready val="0"/>
+<internalHostRef val="childMac4"/>
+<externalHostRef val="childUrl1"/>
+<scheduleRef val="childSchedule1"/>
+</Rule>
+<Rule instance="5">
+<enable val="1"/>
+<action val="1"/>
+<ruleName val="TEST_RULE_1"/>
+<isParentCtrl val="0"/>
+<direction val="0"/>
+<protocol val="3"/>
+<setAlready val="0"/>
+<internalHostRef val="TEST_HOST_1"/>
+<externalHostRef val="TEST_TARGET_1"/>
+<scheduleRef val="TEST_SCHEDULE_1"/>
+</Rule>
+</X_TP_Firewall>
+<X_TP_StatCfg>
+<X_TP_StatEntry instance="1">
+<ipAddress val="3232235530"/>
+<macAddress val="74:D4:35:A1:0C:CB"/>
+<totalPkts val="187"/>
+<totalBytes val="16247"/>
+<currPkts val="0"/>
+<currBytes val="0"/>
+<currIcmp val="0"/>
+<currUdp val="0"/>
+<currSyn val="0"/>
+<currIcmpMax val="0"/>
+<currUdpMax val="23"/>
+<currSynMax val="0"/>
+</X_TP_StatEntry>
+<X_TP_StatEntry instance="2">
+<ipAddress val="3232235532"/>
+<macAddress val="30:B5:C2:03:59:0F"/>
+<totalPkts val="871"/>
+<totalBytes val="68636"/>
+<currPkts val="0"/>
+<currBytes val="0"/>
+<currIcmp val="0"/>
+<currUdp val="0"/>
+<currSyn val="0"/>
+<currIcmpMax val="0"/>
+<currUdpMax val="8"/>
+<currSynMax val="19"/>
+</X_TP_StatEntry>
+<X_TP_StatEntry instance="3">
+<ipAddress val="3232235620"/>
+<macAddress val="74:51:BA:E2:F6:60"/>
+<totalPkts val="1714"/>
+<totalBytes val="137791"/>
+<currPkts val="0"/>
+<currBytes val="0"/>
+<currIcmp val="0"/>
+<currUdp val="0"/>
+<currSyn val="0"/>
+<currIcmpMax val="6"/>
+<currUdpMax val="84"/>
+<currSynMax val="86"/>
+</X_TP_StatEntry>
+<enable val="1"/>
+<interval val="10"/>
+<action val="0"/>
+<X_TP_DdosCfg>
+<enable val="0"/>
+<enableIcmpFilter val="0"/>
+<icmpThreshold val="50"/>
+<enableUdpFilter val="0"/>
+<udpThreshold val="500"/>
+<enableSynFilter val="0"/>
+<synThreshold val="50"/>
+<forbidLanPing val="0"/>
+<forbidWanPing val="1"/>
+<action val="0"/>
+</X_TP_DdosCfg>
+</X_TP_StatCfg>
+<WANDevice instance="1">
+<WANCommonInterfaceConfig>
+<enabledForInternet val="1"/>
+<WANAccessType val="Ethernet"/>
+<layer1UpstreamMaxBitRate val="0"/>
+<layer1DownstreamMaxBitRate val="0"/>
+<physicalLinkStatus val=""/>
+<WANAccessProvider val=""/>
+<totalBytesSent val="0"/>
+<totalBytesReceived val="0"/>
+<totalPacketsSent val="0"/>
+<totalPacketsReceived val="0"/>
+<maximumActiveConnections val="0"/>
+<numberOfActiveConnections val="1"/>
+</WANCommonInterfaceConfig>
+<WANConnectionDevice instance="1">
+<WANIPConnection instance="1">
+<enable val="1"/>
+<connectionStatus val="Connected"/>
+<possibleConnectionTypes val=""/>
+<connectionType val="IP_Routed"/>
+<name val="ewan_ipoe_s"/>
+<uptime val="0"/>
+<lastConnectionError val="ERROR_NONE"/>
+<X_TP_ConnectionId val="10"/>
+<idleDisconnectTime val="15"/>
+<NATEnabled val="1"/>
+<X_TP_FullconeNATEnabled val="0"/>
+<X_TP_Hostname val=""/>
+<X_TP_Unicast val="0"/>
+<addressingType val="Static"/>
+<externalIPAddress val="192.168.137.123"/>
+<subnetMask val="255.255.255.0"/>
+<X_TP_BcastAddr val=""/>
+<defaultGateway val="192.168.137.1"/>
+<X_TP_FirewallEnabled val="1"/>
+<DNSEnabled val="1"/>
+<DNSOverrideAllowed val="1"/>
+<DNSServers val="192.168.137.1,0.0.0.0"/>
+<maxMTUSize val="1500"/>
+<MACAddress val="00:0A:EB:13:09:6A"/>
+<MACAddressOverride val="0"/>
+<X_TP_ClonedMACAddress val=""/>
+<connectionTrigger val="OnDemand"/>
+<routeProtocolRx val="Off"/>
+<X_TP_RipOperationMode val="Passive"/>
+<portMappingNumberOfEntries val="1"/>
+<X_TP_IfName val="eth0.2"/>
+<X_TP_IGMPProxyEnabled val="1"/>
+<X_TP_IGMPForceVersion val="0"/>
+<X_TP_IPv4Enabled val="1"/>
+<X_TP_IPv6Enabled val="0"/>
+<X_TP_IPv6ConnStatus val="Unconfigured"/>
+<X_TP_IPv6AddressingType val="Static"/>
+<X_TP_ExternalIPv6Address val="::"/>
+<X_TP_PrefixLength val="64"/>
+<X_TP_DefaultIPv6Gateway val="::"/>
+<X_TP_DefaultIPv6GatewayOverride val="0"/>
+<X_TP_IPv6DNSEnabled val="1"/>
+<X_TP_IPv6DNSOverrideAllowed val="0"/>
+<X_TP_IPv6DNSServers val="::,::"/>
+<X_TP_PDEnabled val="0"/>
+<X_TP_SitePrefix val=""/>
+<X_TP_SitePrefixLength val="64"/>
+<X_TP_SitePrefixPltime val="0"/>
+<X_TP_SitePrefixVltime val="0"/>
+<X_TP_Sit6rdEnabled val="0"/>
+<X_TP_DSLiteEnabled val="0"/>
+<X_TP_MLDProxyEnabled val="0"/>
+<X_TP_TransportType val=""/>
+<X_TP_BpaEnable val="0"/>
+<X_TP_BpaUsername val=""/>
+<X_TP_BpaPassword val=""/>
+<X_TP_BpaAuthServer val=""/>
+<X_TP_BpaAuthDomain val=""/>
+<X_TP_BpaConnectionStatus val="Disconnected"/>
+<X_TP_BpaIdleDisconnectTime val="15"/>
+<X_TP_BpaConnectionTrigger val="AlwaysOn"/>
+<X_TP_PortTriggering instance="1">
+<enable val="1"/>
+<triggerPort val="47624"/>
+<triggerProtocol val="TCP or UDP"/>
+<openProtocol val="TCP or UDP"/>
+<openPort val="2300-2400"/>
+</X_TP_PortTriggering>
+<X_TP_PortTriggering instance="2">
+<enable val="1"/>
+<triggerPort val="554"/>
+<triggerProtocol val="TCP or UDP"/>
+<openProtocol val="TCP or UDP"/>
+<openPort val="6970-6999"/>
+</X_TP_PortTriggering>
+<PortMapping instance="1">
+<portMappingEnabled val="1"/>
+<externalPort val="110"/>
+<X_TP_ExternalPortEnd val="110"/>
+<internalPort val="110"/>
+<X_TP_InternalPortEnd val="110"/>
+<portMappingProtocol val="TCP"/>
+<internalClient val="192.168.0.117"/>
+</PortMapping>
+</WANIPConnection>
+<WANIPConnection instance="2">
+<enable val="0"/>
+<connectionStatus val="Unconfigured"/>
+<possibleConnectionTypes val=""/>
+<connectionType val="IP_Routed"/>
+<name val="ewan_ipoe_d"/>
+<uptime val="0"/>
+<lastConnectionError val="ERROR_NONE"/>
+<X_TP_ConnectionId val="10"/>
+<idleDisconnectTime val="15"/>
+<NATEnabled val="1"/>
+<X_TP_FullconeNATEnabled val="0"/>
+<X_TP_Hostname val="TL-WR840N"/>
+<X_TP_Unicast val="0"/>
+<addressingType val="DHCP"/>
+<externalIPAddress val="0.0.0.0"/>
+<subnetMask val="0.0.0.0"/>
+<X_TP_BcastAddr val=""/>
+<defaultGateway val="0.0.0.0"/>
+<X_TP_FirewallEnabled val="1"/>
+<DNSEnabled val="1"/>
+<DNSOverrideAllowed val="0"/>
+<DNSServers val="0.0.0.0,0.0.0.0"/>
+<maxMTUSize val="1500"/>
+<MACAddress val=""/>
+<MACAddressOverride val="0"/>
+<X_TP_ClonedMACAddress val=""/>
+<connectionTrigger val="OnDemand"/>
+<routeProtocolRx val="Off"/>
+<X_TP_RipOperationMode val="Passive"/>
+<portMappingNumberOfEntries val="0"/>
+<X_TP_IfName val="eth0.2"/>
+<X_TP_IGMPProxyEnabled val="1"/>
+<X_TP_IGMPForceVersion val="0"/>
+<X_TP_IPv4Enabled val="1"/>
+<X_TP_IPv6Enabled val="0"/>
+<X_TP_IPv6ConnStatus val="Unconfigured"/>
+<X_TP_IPv6AddressingType val="DHCPv6"/>
+<X_TP_ExternalIPv6Address val="::"/>
+<X_TP_PrefixLength val="0"/>
+<X_TP_DefaultIPv6Gateway val="::"/>
+<X_TP_DefaultIPv6GatewayOverride val="0"/>
+<X_TP_IPv6DNSEnabled val="1"/>
+<X_TP_IPv6DNSOverrideAllowed val="0"/>
+<X_TP_IPv6DNSServers val="::,::"/>
+<X_TP_PDEnabled val="0"/>
+<X_TP_SitePrefix val=""/>
+<X_TP_SitePrefixLength val="64"/>
+<X_TP_SitePrefixPltime val="0"/>
+<X_TP_SitePrefixVltime val="0"/>
+<X_TP_Sit6rdEnabled val="0"/>
+<X_TP_DSLiteEnabled val="0"/>
+<X_TP_MLDProxyEnabled val="0"/>
+<X_TP_TransportType val=""/>
+<X_TP_BpaEnable val="0"/>
+<X_TP_BpaUsername val=""/>
+<X_TP_BpaPassword val=""/>
+<X_TP_BpaAuthServer val=""/>
+<X_TP_BpaAuthDomain val=""/>
+<X_TP_BpaConnectionStatus val="Disconnected"/>
+<X_TP_BpaIdleDisconnectTime val="15"/>
+<X_TP_BpaConnectionTrigger val="AlwaysOn"/>
+</WANIPConnection>
+<WANIPConnection instance="3">
+<enable val="0"/>
+<connectionStatus val="Unconfigured"/>
+<possibleConnectionTypes val=""/>
+<connectionType val="IP_Routed"/>
+<name val="ewan_bpa_d"/>
+<uptime val="0"/>
+<lastConnectionError val="ERROR_NONE"/>
+<X_TP_ConnectionId val="10"/>
+<idleDisconnectTime val="15"/>
+<NATEnabled val="1"/>
+<X_TP_FullconeNATEnabled val="0"/>
+<X_TP_Hostname val="TL-WR840N"/>
+<X_TP_Unicast val="0"/>
+<addressingType val="DHCP"/>
+<externalIPAddress val="0.0.0.0"/>
+<subnetMask val="0.0.0.0"/>
+<X_TP_BcastAddr val=""/>
+<defaultGateway val="0.0.0.0"/>
+<X_TP_FirewallEnabled val="1"/>
+<DNSEnabled val="1"/>
+<DNSOverrideAllowed val="0"/>
+<DNSServers val="0.0.0.0,0.0.0.0"/>
+<maxMTUSize val="1500"/>
+<MACAddress val=""/>
+<MACAddressOverride val="0"/>
+<X_TP_ClonedMACAddress val=""/>
+<connectionTrigger val="OnDemand"/>
+<routeProtocolRx val="Off"/>
+<X_TP_RipOperationMode val="Passive"/>
+<portMappingNumberOfEntries val="0"/>
+<X_TP_IfName val=""/>
+<X_TP_IGMPProxyEnabled val="1"/>
+<X_TP_IGMPForceVersion val="0"/>
+<X_TP_IPv4Enabled val="1"/>
+<X_TP_IPv6Enabled val="0"/>
+<X_TP_IPv6ConnStatus val="Unconfigured"/>
+<X_TP_IPv6AddressingType val="DHCPv6"/>
+<X_TP_ExternalIPv6Address val="::"/>
+<X_TP_PrefixLength val="64"/>
+<X_TP_DefaultIPv6Gateway val="::"/>
+<X_TP_DefaultIPv6GatewayOverride val="0"/>
+<X_TP_IPv6DNSEnabled val="1"/>
+<X_TP_IPv6DNSOverrideAllowed val="0"/>
+<X_TP_IPv6DNSServers val=""/>
+<X_TP_PDEnabled val="0"/>
+<X_TP_SitePrefix val=""/>
+<X_TP_SitePrefixLength val="64"/>
+<X_TP_SitePrefixPltime val="0"/>
+<X_TP_SitePrefixVltime val="0"/>
+<X_TP_Sit6rdEnabled val="0"/>
+<X_TP_DSLiteEnabled val="0"/>
+<X_TP_MLDProxyEnabled val="0"/>
+<X_TP_TransportType val=""/>
+<X_TP_BpaEnable val="1"/>
+<X_TP_BpaUsername val=""/>
+<X_TP_BpaPassword val=""/>
+<X_TP_BpaAuthServer val=""/>
+<X_TP_BpaAuthDomain val=""/>
+<X_TP_BpaConnectionStatus val="Disconnected"/>
+<X_TP_BpaIdleDisconnectTime val="15"/>
+<X_TP_BpaConnectionTrigger val="AlwaysOn"/>
+</WANIPConnection>
+<WANIPConnection instance="4">
+<enable val="0"/>
+<connectionStatus val="Unconfigured"/>
+<possibleConnectionTypes val=""/>
+<connectionType val="IP_Routed"/>
+<name val="ewan_ipoev6_s"/>
+<uptime val="0"/>
+<lastConnectionError val="ERROR_NONE"/>
+<X_TP_ConnectionId val="11"/>
+<idleDisconnectTime val="15"/>
+<NATEnabled val="1"/>
+<X_TP_FullconeNATEnabled val="0"/>
+<X_TP_Hostname val=""/>
+<X_TP_Unicast val="0"/>
+<addressingType val="Static"/>
+<externalIPAddress val="0.0.0.0"/>
+<subnetMask val="0.0.0.0"/>
+<X_TP_BcastAddr val=""/>
+<defaultGateway val="0.0.0.0"/>
+<X_TP_FirewallEnabled val="1"/>
+<DNSEnabled val="1"/>
+<DNSOverrideAllowed val="0"/>
+<DNSServers val=""/>
+<maxMTUSize val="1500"/>
+<MACAddress val=""/>
+<MACAddressOverride val="0"/>
+<X_TP_ClonedMACAddress val=""/>
+<connectionTrigger val="OnDemand"/>
+<routeProtocolRx val="Off"/>
+<X_TP_RipOperationMode val="Passive"/>
+<portMappingNumberOfEntries val="0"/>
+<X_TP_IfName val=""/>
+<X_TP_IGMPProxyEnabled val="1"/>
+<X_TP_IGMPForceVersion val="0"/>
+<X_TP_IPv4Enabled val="0"/>
+<X_TP_IPv6Enabled val="1"/>
+<X_TP_IPv6ConnStatus val="Unconfigured"/>
+<X_TP_IPv6AddressingType val="Static"/>
+<X_TP_ExternalIPv6Address val="::"/>
+<X_TP_PrefixLength val="64"/>
+<X_TP_DefaultIPv6Gateway val="::"/>
+<X_TP_DefaultIPv6GatewayOverride val="0"/>
+<X_TP_IPv6DNSEnabled val="1"/>
+<X_TP_IPv6DNSOverrideAllowed val="0"/>
+<X_TP_IPv6DNSServers val=""/>
+<X_TP_PDEnabled val="0"/>
+<X_TP_SitePrefix val=""/>
+<X_TP_SitePrefixLength val="64"/>
+<X_TP_SitePrefixPltime val="0"/>
+<X_TP_SitePrefixVltime val="0"/>
+<X_TP_Sit6rdEnabled val="0"/>
+<X_TP_DSLiteEnabled val="0"/>
+<X_TP_MLDProxyEnabled val="0"/>
+<X_TP_TransportType val=""/>
+<X_TP_BpaEnable val="0"/>
+<X_TP_BpaUsername val=""/>
+<X_TP_BpaPassword val=""/>
+<X_TP_BpaAuthServer val=""/>
+<X_TP_BpaAuthDomain val=""/>
+<X_TP_BpaConnectionStatus val="Disconnected"/>
+<X_TP_BpaIdleDisconnectTime val="15"/>
+<X_TP_BpaConnectionTrigger val="AlwaysOn"/>
+</WANIPConnection>
+<WANIPConnection instance="5">
+<enable val="1"/>
+<connectionStatus val="Unconfigured"/>
+<possibleConnectionTypes val=""/>
+<connectionType val="IP_Routed"/>
+<name val="ewan_ipoev6_d"/>
+<uptime val="0"/>
+<lastConnectionError val="ERROR_NONE"/>
+<X_TP_ConnectionId val="11"/>
+<idleDisconnectTime val="15"/>
+<NATEnabled val="1"/>
+<X_TP_FullconeNATEnabled val="0"/>
+<X_TP_Hostname val="TL-WR840N"/>
+<X_TP_Unicast val="0"/>
+<addressingType val="DHCP"/>
+<externalIPAddress val="0.0.0.0"/>
+<subnetMask val="0.0.0.0"/>
+<X_TP_BcastAddr val=""/>
+<defaultGateway val="0.0.0.0"/>
+<X_TP_FirewallEnabled val="1"/>
+<DNSEnabled val="1"/>
+<DNSOverrideAllowed val="0"/>
+<DNSServers val="0.0.0.0,0.0.0.0"/>
+<maxMTUSize val="1500"/>
+<MACAddress val="D8:5D:4C:BF:60:17"/>
+<MACAddressOverride val="0"/>
+<X_TP_ClonedMACAddress val=""/>
+<connectionTrigger val="OnDemand"/>
+<routeProtocolRx val="Off"/>
+<X_TP_RipOperationMode val="Passive"/>
+<portMappingNumberOfEntries val="0"/>
+<X_TP_IfName val="eth0.2"/>
+<X_TP_IGMPProxyEnabled val="1"/>
+<X_TP_IGMPForceVersion val="0"/>
+<X_TP_IPv4Enabled val="0"/>
+<X_TP_IPv6Enabled val="1"/>
+<X_TP_IPv6ConnStatus val="Connecting"/>
+<X_TP_IPv6AddressingType val="DHCPv6"/>
+<X_TP_ExternalIPv6Address val="::"/>
+<X_TP_PrefixLength val="0"/>
+<X_TP_DefaultIPv6Gateway val="::"/>
+<X_TP_DefaultIPv6GatewayOverride val="0"/>
+<X_TP_IPv6DNSEnabled val="1"/>
+<X_TP_IPv6DNSOverrideAllowed val="0"/>
+<X_TP_IPv6DNSServers val="::,::"/>
+<X_TP_PDEnabled val="1"/>
+<X_TP_SitePrefix val="::"/>
+<X_TP_SitePrefixLength val="64"/>
+<X_TP_SitePrefixPltime val="0"/>
+<X_TP_SitePrefixVltime val="0"/>
+<X_TP_Sit6rdEnabled val="0"/>
+<X_TP_DSLiteEnabled val="0"/>
+<X_TP_MLDProxyEnabled val="0"/>
+<X_TP_TransportType val=""/>
+<X_TP_BpaEnable val="0"/>
+<X_TP_BpaUsername val=""/>
+<X_TP_BpaPassword val=""/>
+<X_TP_BpaAuthServer val=""/>
+<X_TP_BpaAuthDomain val=""/>
+<X_TP_BpaConnectionStatus val="Disconnected"/>
+<X_TP_BpaIdleDisconnectTime val="15"/>
+<X_TP_BpaConnectionTrigger val="AlwaysOn"/>
+</WANIPConnection>
+<WANPPPConnection instance="1">
+<enable val="0"/>
+<connectionStatus val="Unconfigured"/>
+<possibleConnectionTypes val=""/>
+<connectionType val="IP_Routed"/>
+<PPPoESessionID val="0"/>
+<defaultGateway val="0.0.0.0"/>
+<name val="ewan_pppoe"/>
+<uptime val="0"/>
+<lastConnectionError val="ERROR_NONE"/>
+<idleDisconnectTime val="15"/>
+<RSIPAvailable val="0"/>
+<NATEnabled val="1"/>
+<X_TP_FullconeNATEnabled val="0"/>
+<X_TP_FirewallEnabled val="1"/>
+<X_TP_IGMPProxyEnabled val="1"/>
+<X_TP_IGMPForceVersion val="0"/>
+<username val=""/>
+<password val=""/>
+<PPPAuthenticationProtocol val="AUTO_AUTH"/>
+<X_TP_IfName val="ppp0"/>
+<X_TP_L2IfName val=""/>
+<X_TP_BcastAddr val=""/>
+<X_TP_ConnectionId val="10"/>
+<X_TP_UseStaticIP val="0"/>
+<externalIPAddress val="0.0.0.0"/>
+<remoteIPAddress val="0.0.0.0"/>
+<maxMRUSize val="1480"/>
+<currentMRUSize val="0"/>
+<DNSEnabled val="0"/>
+<DNSOverrideAllowed val="0"/>
+<DNSServers val="0.0.0.0,0.0.0.0"/>
+<MACAddress val=""/>
+<MACAddressOverride val="0"/>
+<X_TP_ClonedMACAddress val=""/>
+<transportType val="PPPoE"/>
+<PPPoEACName val=""/>
+<PPPoEServiceName val=""/>
+<connectionTrigger val="AlwaysOn"/>
+<routeProtocolRx val="Off"/>
+<PPPLCPEcho val="30"/>
+<PPPLCPEchoRetry val="0"/>
+<X_TP_IPv4Enabled val="1"/>
+<X_TP_IPv6Enabled val="0"/>
+<X_TP_IPv6ConnStatus val="Unconfigured"/>
+<X_TP_IPv6CPUp val="0"/>
+<X_TP_IPv6AddressingType val="DHCPv6"/>
+<X_TP_ExternalIPv6Address val="::"/>
+<X_TP_PrefixLength val="0"/>
+<X_TP_DefaultIPv6Gateway val="::"/>
+<X_TP_DefaultIPv6GatewayOverride val="0"/>
+<X_TP_IPv6DNSEnabled val="1"/>
+<X_TP_IPv6DNSOverrideAllowed val="0"/>
+<X_TP_IPv6DNSServers val="::,::"/>
+<X_TP_PDEnabled val="0"/>
+<X_TP_SitePrefix val=""/>
+<X_TP_SitePrefixLength val="64"/>
+<X_TP_SitePrefixPltime val="0"/>
+<X_TP_SitePrefixVltime val="0"/>
+<X_TP_DSLiteEnabled val="0"/>
+<X_TP_MLDProxyEnabled val="0"/>
+<portMappingNumberOfEntries val="0"/>
+<secondConnection val="sec_conn_disable"/>
+</WANPPPConnection>
+<WANPPPConnection instance="2">
+<enable val="0"/>
+<connectionStatus val="Unconfigured"/>
+<possibleConnectionTypes val=""/>
+<connectionType val="IP_Routed"/>
+<PPPoESessionID val="0"/>
+<defaultGateway val="0.0.0.0"/>
+<name val="ewan_pppoev6"/>
+<uptime val="0"/>
+<lastConnectionError val="ERROR_NONE"/>
+<idleDisconnectTime val="15"/>
+<RSIPAvailable val="0"/>
+<NATEnabled val="1"/>
+<X_TP_FullconeNATEnabled val="0"/>
+<X_TP_FirewallEnabled val="1"/>
+<X_TP_IGMPProxyEnabled val="1"/>
+<X_TP_IGMPForceVersion val="0"/>
+<username val=""/>
+<password val=""/>
+<PPPAuthenticationProtocol val="AUTO_AUTH"/>
+<X_TP_IfName val="ppp1"/>
+<X_TP_L2IfName val=""/>
+<X_TP_BcastAddr val=""/>
+<X_TP_ConnectionId val="11"/>
+<X_TP_UseStaticIP val="0"/>
+<externalIPAddress val="0.0.0.0"/>
+<remoteIPAddress val="0.0.0.0"/>
+<maxMRUSize val="1480"/>
+<currentMRUSize val="0"/>
+<DNSEnabled val="0"/>
+<DNSOverrideAllowed val="0"/>
+<DNSServers val="0.0.0.0,0.0.0.0"/>
+<MACAddress val=""/>
+<MACAddressOverride val="0"/>
+<X_TP_ClonedMACAddress val=""/>
+<transportType val="PPPoE"/>
+<PPPoEACName val=""/>
+<PPPoEServiceName val=""/>
+<connectionTrigger val="AlwaysOn"/>
+<routeProtocolRx val="Off"/>
+<PPPLCPEcho val="30"/>
+<PPPLCPEchoRetry val="0"/>
+<X_TP_IPv4Enabled val="0"/>
+<X_TP_IPv6Enabled val="1"/>
+<X_TP_IPv6ConnStatus val="Unconfigured"/>
+<X_TP_IPv6CPUp val="0"/>
+<X_TP_IPv6AddressingType val="DHCPv6"/>
+<X_TP_ExternalIPv6Address val="::"/>
+<X_TP_PrefixLength val="0"/>
+<X_TP_DefaultIPv6Gateway val="::"/>
+<X_TP_DefaultIPv6GatewayOverride val="0"/>
+<X_TP_IPv6DNSEnabled val="1"/>
+<X_TP_IPv6DNSOverrideAllowed val="0"/>
+<X_TP_IPv6DNSServers val="::,::"/>
+<X_TP_PDEnabled val="0"/>
+<X_TP_SitePrefix val=""/>
+<X_TP_SitePrefixLength val="64"/>
+<X_TP_SitePrefixPltime val="0"/>
+<X_TP_SitePrefixVltime val="0"/>
+<X_TP_DSLiteEnabled val="0"/>
+<X_TP_MLDProxyEnabled val="0"/>
+<portMappingNumberOfEntries val="0"/>
+<secondConnection val="sec_conn_disable"/>
+</WANPPPConnection>
+<X_TP_L2TP_Connection>
+<enable val="0"/>
+<name val="ewan_l2tp"/>
+<serverIpOrName val=""/>
+<serverIp val="0.0.0.0"/>
+<connectionStatusIP val="Unconfigured"/>
+<connectionTypeIP val="Unconfigured"/>
+<addressingType val="DHCP"/>
+<externalIPAddressIP val="0.0.0.0"/>
+<subnetMaskIP val="0.0.0.0"/>
+<bcastAddrIP val=""/>
+<defaultGatewayIP val="0.0.0.0"/>
+<DNSServersIP val=""/>
+<maxMTUSizeIP val="1500"/>
+<ifNameIP val=""/>
+<sit6rdEnabled val="0"/>
+<connectionStatus val="Unconfigured"/>
+<possibleConnectionTypes val=""/>
+<connectionType val="IP_Routed"/>
+<defaultGateway val=""/>
+<uptime val="0"/>
+<idleDisconnectTime val="15"/>
+<NATEnabled val="1"/>
+<fullconeNATEnabled val="0"/>
+<hostname val=""/>
+<unicast val="0"/>
+<firewallEnabled val="1"/>
+<IGMPProxyEnabled val="1"/>
+<IGMPForceVersion val="0"/>
+<username val=""/>
+<password val=""/>
+<PPPAuthenticationProtocol val="AUTO_AUTH"/>
+<ifName val=""/>
+<l2IfName val=""/>
+<bcastAddr val=""/>
+<connectionId val="10"/>
+<externalIPAddress val="0.0.0.0"/>
+<remoteIPAddress val=""/>
+<maxMRUSize val="1460"/>
+<currentMRUSize val="0"/>
+<DNSServers val="0.0.0.0,0.0.0.0"/>
+<MACAddress val=""/>
+<MACAddressOverride val="0"/>
+<clonedMACAddress val=""/>
+<transportType val="L2TP"/>
+<connectionTrigger val="AlwaysOn"/>
+<portMappingNumberOfEntries val="0"/>
+</X_TP_L2TP_Connection>
+<WANIPConnectionNumberOfEntries val="5"/>
+<WANPPPConnectionNumberOfEntries val="2"/>
+<X_TP_PPTP_Connection>
+<enable val="0"/>
+<name val="ewan_pptp"/>
+<serverIpOrName val=""/>
+<serverIp val="0.0.0.0"/>
+<connectionStatusIP val="Unconfigured"/>
+<connectionTypeIP val="Unconfigured"/>
+<addressingType val="DHCP"/>
+<externalIPAddressIP val="0.0.0.0"/>
+<subnetMaskIP val="0.0.0.0"/>
+<bcastAddrIP val=""/>
+<defaultGatewayIP val="0.0.0.0"/>
+<DNSServersIP val=""/>
+<maxMTUSizeIP val="1500"/>
+<ifNameIP val=""/>
+<sit6rdEnabled val="0"/>
+<connectionStatus val="Unconfigured"/>
+<possibleConnectionTypes val=""/>
+<connectionType val="IP_Routed"/>
+<defaultGateway val=""/>
+<uptime val="0"/>
+<idleDisconnectTime val="15"/>
+<NATEnabled val="1"/>
+<fullconeNATEnabled val="0"/>
+<hostname val=""/>
+<unicast val="0"/>
+<firewallEnabled val="1"/>
+<IGMPProxyEnabled val="1"/>
+<IGMPForceVersion val="0"/>
+<username val=""/>
+<password val=""/>
+<PPPAuthenticationProtocol val="AUTO_AUTH"/>
+<ifName val=""/>
+<l2IfName val=""/>
+<bcastAddr val=""/>
+<connectionId val="10"/>
+<externalIPAddress val="0.0.0.0"/>
+<remoteIPAddress val=""/>
+<maxMRUSize val="1420"/>
+<currentMRUSize val="0"/>
+<DNSServers val="0.0.0.0,0.0.0.0"/>
+<MACAddress val=""/>
+<MACAddressOverride val="0"/>
+<clonedMACAddress val=""/>
+<transportType val="PPTP"/>
+<connectionTrigger val="AlwaysOn"/>
+<portMappingNumberOfEntries val="0"/>
+</X_TP_PPTP_Connection>
+<WANEthernetLinkConfig>
+<enable val="1"/>
+<ethernetLinkStatus val="Up"/>
+<X_TP_VLanEnabled val="0"/>
+<X_TP_VID val="0"/>
+<X_TP_IfName val="eth0.2"/>
+<X_TP_MACAddress val=""/>
+</WANEthernetLinkConfig>
+</WANConnectionDevice>
+<WANEthernetInterfaceConfig>
+<X_TP_AutoPVC>
+<PVCPair instance="0">
+<enable val="1"/>
+<status val="Up"/>
+<MACAddress val=""/>
+<maxBitRate val=""/>
+<duplexMode val=""/>
+<X_TP_IfName val="eth0.2"/>
+<X_TP_lastUsedIntf val="ipoe_eth3_s"/>
+</PVCPair>
+</X_TP_AutoPVC>
+</WANEthernetInterfaceConfig>
+<WANConnectionNumberOfEntries val="0"/>
+</WANDevice>
+<WANDevice instance="2">
+<WANCommonInterfaceConfig>
+<enabledForInternet val="1"/>
+<WANAccessType val="USB_3G"/>
+<layer1UpstreamMaxBitRate val="0"/>
+<layer1DownstreamMaxBitRate val="0"/>
+<physicalLinkStatus val=""/>
+<WANAccessProvider val=""/>
+<totalBytesSent val="0"/>
+<totalBytesReceived val="0"/>
+<totalPacketsSent val="0"/>
+<totalPacketsReceived val="0"/>
+<maximumActiveConnections val="0"/>
+<numberOfActiveConnections val="0"/>
+</WANCommonInterfaceConfig>
+<WANConnectionDevice instance="1">
+<X_TP_L2TP_Connection>
+<enable val="0"/>
+<name val=""/>
+<serverIpOrName val=""/>
+<serverIp val="0.0.0.0"/>
+<connectionStatusIP val="Unconfigured"/>
+<connectionTypeIP val="Unconfigured"/>
+<addressingType val="DHCP"/>
+<externalIPAddressIP val=""/>
+<subnetMaskIP val=""/>
+<bcastAddrIP val=""/>
+<defaultGatewayIP val=""/>
+<DNSServersIP val=""/>
+<maxMTUSizeIP val="1500"/>
+<ifNameIP val=""/>
+<sit6rdEnabled val="0"/>
+<connectionStatus val="Unconfigured"/>
+<possibleConnectionTypes val=""/>
+<connectionType val="IP_Routed"/>
+<defaultGateway val=""/>
+<uptime val="0"/>
+<idleDisconnectTime val="15"/>
+<NATEnabled val="0"/>
+<fullconeNATEnabled val="0"/>
+<hostname val=""/>
+<unicast val="0"/>
+<firewallEnabled val="1"/>
+<IGMPProxyEnabled val="1"/>
+<IGMPForceVersion val="0"/>
+<username val=""/>
+<password val=""/>
+<PPPAuthenticationProtocol val="AUTO_AUTH"/>
+<ifName val=""/>
+<l2IfName val=""/>
+<bcastAddr val=""/>
+<connectionId val="-1"/>
+<externalIPAddress val="0.0.0.0"/>
+<remoteIPAddress val=""/>
+<maxMRUSize val="1460"/>
+<currentMRUSize val="0"/>
+<DNSServers val="0.0.0.0,0.0.0.0"/>
+<MACAddress val=""/>
+<MACAddressOverride val="0"/>
+<clonedMACAddress val=""/>
+<transportType val="L2TP"/>
+<connectionTrigger val="AlwaysOn"/>
+<portMappingNumberOfEntries val="0"/>
+</X_TP_L2TP_Connection>
+<WANIPConnectionNumberOfEntries val="0"/>
+<WANPPPConnectionNumberOfEntries val="0"/>
+<X_TP_PPTP_Connection>
+<enable val="0"/>
+<name val=""/>
+<serverIpOrName val=""/>
+<serverIp val="0.0.0.0"/>
+<connectionStatusIP val="Unconfigured"/>
+<connectionTypeIP val="Unconfigured"/>
+<addressingType val="DHCP"/>
+<externalIPAddressIP val=""/>
+<subnetMaskIP val=""/>
+<bcastAddrIP val=""/>
+<defaultGatewayIP val=""/>
+<DNSServersIP val=""/>
+<maxMTUSizeIP val="1500"/>
+<ifNameIP val=""/>
+<sit6rdEnabled val="0"/>
+<connectionStatus val="Unconfigured"/>
+<possibleConnectionTypes val=""/>
+<connectionType val="IP_Routed"/>
+<defaultGateway val=""/>
+<uptime val="0"/>
+<idleDisconnectTime val="15"/>
+<NATEnabled val="0"/>
+<fullconeNATEnabled val="0"/>
+<hostname val=""/>
+<unicast val="0"/>
+<firewallEnabled val="1"/>
+<IGMPProxyEnabled val="1"/>
+<IGMPForceVersion val="0"/>
+<username val=""/>
+<password val=""/>
+<PPPAuthenticationProtocol val="AUTO_AUTH"/>
+<ifName val=""/>
+<l2IfName val=""/>
+<bcastAddr val=""/>
+<connectionId val="-1"/>
+<externalIPAddress val="0.0.0.0"/>
+<remoteIPAddress val=""/>
+<maxMRUSize val="1420"/>
+<currentMRUSize val="0"/>
+<DNSServers val="0.0.0.0,0.0.0.0"/>
+<MACAddress val=""/>
+<MACAddressOverride val="0"/>
+<clonedMACAddress val=""/>
+<transportType val="PPTP"/>
+<connectionTrigger val="AlwaysOn"/>
+<portMappingNumberOfEntries val="0"/>
+</X_TP_PPTP_Connection>
+<WANEthernetLinkConfig>
+<enable val="0"/>
+<ethernetLinkStatus val=""/>
+<X_TP_VLanEnabled val="0"/>
+<X_TP_VID val="0"/>
+<X_TP_IfName val=""/>
+<X_TP_MACAddress val=""/>
+</WANEthernetLinkConfig>
+</WANConnectionDevice>
+<WANEthernetInterfaceConfig>
+<X_TP_AutoPVC>
+<PVCPair instance="0">
+<enable val="0"/>
+<status val="Up"/>
+<MACAddress val=""/>
+<maxBitRate val=""/>
+<duplexMode val=""/>
+<X_TP_IfName val=""/>
+<X_TP_lastUsedIntf val=""/>
+</PVCPair>
+</X_TP_AutoPVC>
+</WANEthernetInterfaceConfig>
+<WANConnectionNumberOfEntries val="0"/>
+</WANDevice>
+<X_TP_AlgCfg>
+<pptpAlg val="1"/>
+<l2tpAlg val="1"/>
+<ipSecAlg val="1"/>
+<ftpAlg val="1"/>
+<tftpAlg val="1"/>
+<h323Alg val="1"/>
+<sipAlg val="1"/>
+<rtspAlg val="1"/>
+<hw_nat_enable val="0"/>
+</X_TP_AlgCfg>
+<X_TP_SysMode>
+<mode val="ETH"/>
+<DSLL3ForwardingName val="NO_INTERFACE"/>
+<ETHL3ForwardingName val="NO_INTERFACE"/>
+<_3GL3ForwardingName val="NO_INTERFACE"/>
+<DSLL3IPv6ForwardingName val="NO_INTERFACE"/>
+<ETHL3IPv6ForwardingName val="NO_INTERFACE"/>
+</X_TP_SysMode>
+<X_TP_IPv6Tunnel>
+<DSLite>
+<enabled val="0"/>
+<dynamic val="0"/>
+<remoteIPv6Address val=""/>
+</DSLite>
+<mechanism val="2"/>
+<associatedWanIfName val=""/>
+<enabled val="0"/>
+<localAddress val=""/>
+<associatedLanIfName val="br0"/>
+<associatedWanIfMRU val="0"/>
+<Sit6RD>
+<enabled val="0"/>
+<dynamic val="0"/>
+<IPv4MaskLen val="0"/>
+<prefix val=""/>
+<prefixLen val="0"/>
+<borderRelayIPv4Address val=""/>
+</Sit6RD>
+</X_TP_IPv6Tunnel>
+<X_TP_AppCfg>
+<UPnPCfg>
+<enable val="1"/>
+</UPnPCfg>
+<NoipDnsCfg>
+<enable val="0"/>
+<state val="3"/>
+<userName val=""/>
+<password val=""/>
+<userDomain val=""/>
+<server val="dynupdate.no-ip.com"/>
+<login val="1"/>
+</NoipDnsCfg>
+<HttpCfg>
+<httpCharset val="utf-8"/>
+<httpLocalEnabled val="1"/>
+<httpLocalPort val="80"/>
+<httpRemoteEnabled val="0"/>
+<httpRemotePort val="80"/>
+<httpsLocalEnabled val="0"/>
+<httpsLocalPort val="443"/>
+<httpsRemoteEnabled val="0"/>
+<httpsRemotePort val="443"/>
+</HttpCfg>
+<localHost val=""/>
+<remoteHost val=""/>
+<DiagnosticTool>
+<currCommand val="0"/>
+<currHost val="0.0.0.0"/>
+<lastCommand val="0"/>
+<lastHost val="0.0.0.0"/>
+<lastResult val="0"/>
+</DiagnosticTool>
+<DynDnsCfg>
+<enable val="0"/>
+<state val="0"/>
+<userName val=""/>
+<password val=""/>
+<userDomain val=""/>
+<server val="members.dyndns.org"/>
+<login val="1"/>
+</DynDnsCfg>
+<WanTypeDetect>
+<ifName val=""/>
+<state val="1"/>
+<wanType val="0"/>
+<wanTypeGet val="0"/>
+</WanTypeDetect>
+</X_TP_AppCfg>
+<Layer3Forwarding>
+<Forwarding instance="1">
+<enable val="1"/>
+<status val="Enabled"/>
+<destIPAddress val="192.168.2.0"/>
+<destSubnetMask val="255.255.255.0"/>
+<gatewayIPAddress val="192.168.2.1"/>
+<__ifType val="LAN"/>
+</Forwarding>
+<Forwarding instance="2">
+<enable val="1"/>
+<status val="Enabled"/>
+<destIPAddress val="192.168.3.0"/>
+<destSubnetMask val="255.255.255.0"/>
+<gatewayIPAddress val="192.168.3.1"/>
+<__ifType val="Internet"/>
+</Forwarding>
+<__defaultGateway val="192.168.137.1"/>
+<__ifName val="eth0.2"/>
+<__ifAliasName val="ewan_ipoe_s"/>
+<defaultConnectionService val=""/>
+<forwardNumberOfEntries val="0"/>
+</Layer3Forwarding>
+<X_TP_VLAN>
+<enable val="1"/>
+<internetGroupVlanID val="2"/>
+<internetGroupExtendID val="0"/>
+<internetGroupLanPort val="255"/>
+<internetGroupPriority val="0"/>
+<internetUntag val="1"/>
+<workingMode val=""/>
+</X_TP_VLAN>
+<X_TP_IPv6Cfg>
+<disableIPv6 val="0"/>
+<lastUsedWanConnection val=""/>
+</X_TP_IPv6Cfg>
+<X_TP_EWAN>
+<enable val="1"/>
+<MACAddress val=""/>
+<ifName val="eth0.2"/>
+</X_TP_EWAN>
+<DeviceInfo>
+<manufacturer val="TP-LINK"/>
+<manufacturerOUI val="000AEB"/>
+<modelName val="TL-WR840N"/>
+<description val="TP-Link Wireless N Router WR840N "/>
+<productClass val="IGD"/>
+<serialNumber val="000AEB130969"/>
+<hardwareVersion val="TL-WR840N v4 00000004"/>
+<softwareVersion val="0.9.1 3.16 v0001.0 Build 161011 Rel.60105n"/>
+<modemFirmwareVersion val=""/>
+<enabledOptions val=""/>
+<additionalHardwareVersion val="00000019"/>
+<additionalSoftwareVersion val=""/>
+<specVersion val="1.0"/>
+<provisioningCode val=""/>
+<upTime val="2892"/>
+<firstUseDate val=""/>
+<deviceLog val="0x58801a7c"/>
+<X_TP_isFD val="1"/>
+<X_TP_DevManufacturerURL val="http://www.tp-link.com"/>
+<X_TP_DevModelVersion val="13.0"/>
+<X_TP_ProductID val="138477587"/>
+<X_TP_ProductVersion val="1"/>
+<X_TP_SoftwareRevision val="1437205264"/>
+<X_TP_SoftwareRevisionMinor val="0"/>
+<X_TP_PlatformVersion val="2768242945"/>
+<X_TP_BuildDate val="161012"/>
+<X_TP_BuildTime val="33002"/>
+<X_TP_LogCfg>
+<logToRemote val="0"/>
+<remoteSeverity val="4"/>
+<serverIP val="192.168.0.100"/>
+<serverPort val="514"/>
+<facility val="1"/>
+<logToLocal val="1"/>
+<localSeverity val="6"/>
+<logHeadPos val="0"/>
+<logTailPos val="1283"/>
+</X_TP_LogCfg>
+</DeviceInfo>
+<deviceSummary val="InternetGatewayDevice:1.1[](Baseline:1, EthernetLAN:1)"/>
+<LANDeviceNumberOfEntries val="1"/>
+<WANDeviceNumberOfEntries val="0"/>
+<Time>
+<__status val="3"/>
+<NTPServer1 val=""/>
+<NTPServer2 val=""/>
+<NTPServer3 val=""/>
+<NTPServer4 val=""/>
+<NTPServer5 val=""/>
+<currentLocalTime val="1970-01-01T00:48:08+00:00"/>
+<localTimeZone val="+00:00"/>
+<localTimeZoneName val=""/>
+<daylightSavingsUsed val="0"/>
+<daylightSavingsStart val=""/>
+<daylightSavingsEnd val=""/>
+<X_TP_DaylightSavingsStartWeekCount val="0"/>
+<X_TP_DaylightSavingsEndWeekCount val="0"/>
+<X_TP_Hour>
+<year val="1970"/>
+<month val="1"/>
+<day val="1"/>
+<hours val="0"/>
+<minutes val="48"/>
+<seconds val="8"/>
+</X_TP_Hour>
+</Time>
+<X_TP_TrafficControl>
+<TCRule instance="1">
+<id val="1"/>
+<enable val="0"/>
+<startIP val="0"/>
+<endIP val="0"/>
+<startPort val="0"/>
+<endPort val="0"/>
+<protocol val="0"/>
+<precedence val="5"/>
+<upMinBW val="100"/>
+<upMaxBW val="200"/>
+<downMinBW val="100"/>
+<downMaxBW val="200"/>
+<ifMark val="4194304"/>
+<ifName val="ra1"/>
+<ruleType val="1"/>
+<flag val="1"/>
+</TCRule>
+<TCRule instance="2">
+<id val="2"/>
+<enable val="1"/>
+<startIP val="3232235675"/>
+<endIP val="3232235676"/>
+<startPort val="8089"/>
+<endPort val="8090"/>
+<protocol val="0"/>
+<precedence val="5"/>
+<upMinBW val="256"/>
+<upMaxBW val="512"/>
+<downMinBW val="512"/>
+<downMaxBW val="1024"/>
+<ifMark val="0"/>
+<ifName val="no_interface"/>
+<ruleType val="0"/>
+<flag val="1"/>
+</TCRule>
+<TCRuleNumberOfEntries val="2"/>
+<enable val="3"/>
+<linkType val="0"/>
+<upTotalBW val="1024"/>
+<downTotalBW val="1024"/>
+<iptvEnable val="0"/>
+<iptvUpMinBW val="0"/>
+<iptvDownMinBW val="0"/>
+<voIPEnable val="0"/>
+<voIPUpMinBW val="20"/>
+</X_TP_TrafficControl>
+<X_TP_IPv6Firewall>
+<enable val="0"/>
+<defaultAction val="0"/>
+</X_TP_IPv6Firewall>
+<X_TP_EthSwitch>
+<enableVirtualPorts val="0"/>
+<numberOfVirtualPorts val="4"/>
+<ifName val="eth0"/>
+</X_TP_EthSwitch>
+<IPPingDiagnostics>
+<diagnosticsState val="None"/>
+<maximumResponseTime val="0"/>
+<minimumResponseTime val="65535"/>
+<averageResponseTime val="0"/>
+<failureCount val="0"/>
+<successCount val="0"/>
+<X_TP_PktSequence val="0"/>
+<X_TP_ResponseTime val="0"/>
+<X_TP_IPAddress val="0.0.0.0"/>
+<X_TP_Result val=""/>
+<X_TP_ConnName val=""/>
+<X_TP_IfName val=""/>
+<DSCP val="0"/>
+<dataBlockSize val="64"/>
+<timeout val="100"/>
+<numberOfRepetitions val="2"/>
+<host val="0.0.0.0"/>
+<interface val=""/>
+</IPPingDiagnostics>
+<X_TP_NetCfg>
+<DNSServers val="192.168.137.1,0.0.0.0"/>
+<DNSifAliasName val="ewan_ipoe_s"/>
+<currDNSServer val="25798848"/>
+</X_TP_NetCfg>
+<X_TP_DmzHostCfg>
+<enable val="0"/>
+<IPAddress val=""/>
+</X_TP_DmzHostCfg>
+<TraceRouteDiagnostics>
+<diagnosticsState val="None"/>
+<routeHopsNumberOfEntries val="0"/>
+<responseTime val="0"/>
+<maxHopCount val="30"/>
+<DSCP val="0"/>
+<dataBlockSize val="38"/>
+<timeout val="5000"/>
+<numberOfTries val="3"/>
+<X_TP_HopSeq val="1"/>
+<X_TP_IPAddress val="0.0.0.0"/>
+<X_TP_Result val=""/>
+<X_TP_ConnName val=""/>
+<X_TP_IfName val=""/>
+<host val=""/>
+<interface val=""/>
+</TraceRouteDiagnostics>
+<X_TP_UserCfg>
+<rootName val=""/>
+<rootPwd val=""/>
+<adminName val="admin"/>
+<adminPwd val="admin"/>
+<userName val=""/>
+<userPwd val=""/>
+</X_TP_UserCfg>
+<X_TP_ARP>
+<ArpBindTbl>
+<enable val="0"/>
+<ArpBindEntry instance="1">
+<state val="1"/>
+<ip val="3232235687"/>
+<mac val="74:d4:35:a1:0c:79"/>
+</ArpBindEntry>
+</ArpBindTbl>
+<ArpEntry instance="1">
+<flag val="0"/>
+<ip val="3232235530"/>
+<mac val="74:D4:35:A1:0C:CB"/>
+</ArpEntry>
+<ArpEntry instance="2">
+<flag val="0"/>
+<ip val="3232235532"/>
+<mac val="30:B5:C2:03:59:0F"/>
+</ArpEntry>
+</X_TP_ARP>
+<X_TP_SysCfg>
+<flashMac val="d8:5d:4c:bf:60:16"/>
+<flashPin val="12345670"/>
+<flashZoneId val="EUR"/>
+<sign val=""/>
+<signLen val="0"/>
+<publicKey1 val="BgIAAACkAABSU0ExAAQAAAEAAQCNrP4jIUWitcvDIHr3OHnlzLCjGyJoLXgY9uH7tAVaYN+2YWEQ9RuS4PIQo7uWwHs7PYTAh9vF"/>
+<publicKey2 val="pdMfu6NNkdvneLUER5V7Q5HtmPXd3roiIMi55tK7lA0B67bjYpBE/JM+SLbyMRgeNWut0YoufpLNV24ZQa0p7Xj4M5m2ZDclnA=="/>
+<publicKeyLen val="200"/>
+<signStatus val="0"/>
+</X_TP_SysCfg>
+<X_TP_Layer3IPv6Forwarding>
+<__defaultGateway val="::"/>
+<__ifName val="eth0.2"/>
+<__ifAliasName val="ewan_ipoev6_d"/>
+<defaultConnectionService val=""/>
+<IPv6ForwardNumberOfEntries val="0"/>
+</X_TP_Layer3IPv6Forwarding>
+</InternetGatewayDevice>
+</DslCpeConfig>
